@@ -1,0 +1,8 @@
+footer .container-fluid {
+    background: linear-gradient(95deg, rgba(0, 250, 154, 0.50) 0%, rgba(135, 206, 250, 0.50) 83.21%, rgba(255, 255, 255, 0.50) 91.85%);
+    opacity: 80%;
+    .social i {
+        font-size: 24px; /* Tamanho dos ícones */
+        color: #333; /* Cor dos ícones */
+    }
+}

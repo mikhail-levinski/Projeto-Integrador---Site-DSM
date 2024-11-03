@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto PI 1° Semestre">
+    <meta name="keywords" content="fatec, dsm, html, css, bootstrap, js, projeto">
+    <title>Projeto PI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel = "stylesheet" href="css/nav.css">
+    <link rel = "stylesheet" href="css/card.css">
+    <link rel = "stylesheet" href="css/footer.css">
+    <link rel = "stylesheet" href="css/conteudo.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="img/log-dsm.png" style="width: 212px; height: 87px;">
+        </a> 
+        <button class="navbar-toggler d-lg-none custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item flex-grow-1 text-center">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item flex-grow-1 text-center">
+                    <a class="nav-link" href="#perfil">Perfil Profissional</a>
+                </li>
+                <li class="nav-item flex-grow-1  text-center">
+                    <a class="nav-link" href="#grade">Grade Curricular</a>
+                </li>
+                <li class="nav-item flex-grow-1  text-center">
+                    <a class="nav-link" href="#info">Mais Informações</a>
+                </li>
+                <li class="nav-item flex-grow-1  text-center">
+                    <a class="nav-link" href="#fatec">Fatec Indaiatuba</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+      <main>
+        <div class = "container-fluid" id = "conteudo">
+        <section id="home">
+            <h1>Sobre o Curso de Desenvolvimento de Software Multiplataforma</h1><br>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <img src="img/home.png" alt="Imagem da Home" class="img-fluid">
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <p>O curso em Desenvolvimento de Software Multiplataforma tem como objetivo formar profissionais capazes de desenvolver software para diversas plataformas, tais como Web, Desktop, Móvel, Internet das Coisas (IoT), em Nuvem, empregando conceitos de Segurança da Informação e Inteligência Artificial. Assim como especializar profissionais para trabalhar com metodologias ágeis de gestão de projetos, versionamento, integração e entrega contínua de software, visando desenvolver soluções de software que atendam os critérios de qualidade exigidos pelo mercado. Além disso, pretende-se preparar os egressos para estabelecer relacionamentos produtivos; desenvolver a capacidade de comunicação, inclusive em língua estrangeira; utilizar raciocínio lógico; gerar soluções inovadoras; saber posicionar-se enquanto profissional e cidadão ético, com responsabilidade social e ambiental.</p>
+                </div>
+            </div>
+        </section>
+        <section id = "perfil">
+            <h1>Perfil Profissional</h1><br>
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <p>O egresso tem como perfil o profissional que projeta, desenvolve e testa software para múltiplas plataformas, aplicações em Nuvem e Internet das Coisas. Seleciona e aplica conceitos, métodos e tecnologias de Linguagens de Programação, Banco de Dados, Engenharia de Software, Segurança da Informação e Inteligência Artificial, propondo soluções tecnológicas. Realiza análise estatística de dados para apoiar a tomada de decisão. Coordena projetos e equipes de desenvolvimento de software.</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <img src="img/pp.png" alt="Imagem do Perfil" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <section id = "grade">
+            <h1>Grade Curricular</h1><br>
+            <div class="row mb-4">
+                <div class="col-md-4 col-sm-4">
+                    <div class="card" style="width: 18rem;" onclick="exibirInformacao(this)" data-title="1° semestre" data-info= "<li>Modelagem de Banco de Dados</li><li>Desenvolvimento Web I</li><li>Algorítimos e Lógica de Programação</li><li>Engenharia de Software I</li><li>Design Digital</li><li>Sistemas Operacionais e Redes de Computadores</li>">
+                    <div class="card-body">
+                         <h5 class="card-title">1° semestre</h5>
+                         <p class="card-text">Clique para mais informações.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="card" style="width: 18rem;" onclick="exibirInformacao(this)" data-title="2° semestre" data-info= "<li>Banco de Dados - Relacional</li><li>Desenvolvimento Web II</li><li>Técnicas de Programação I</li><li>Engenharia de Software II</li><li>Estrutura de Dados</li><li>Matemática para Computação</li>">
+                        <div class="card-body">
+                             <h5 class="card-title">2° semestre</h5>
+                             <p class="card-text">Clique para mais informações.</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="card" style="width: 18rem;" onclick="exibirInformacao(this)" data-title="3° semestre" data-info= "<li>Banco de Dados - Não Relacional</li><li>Desenvolvimento Web III</li><li>Técnicas de Programação II</li><li>Gestão Ágil de Projetos de Software</li><li>Interação Humano Computador</li><li>Álgebra Linear</li><li>Inglês I</li>">
+                        <div class="card-body">
+                             <h5 class="card-title">3° semestre</h5>
+                             <p class="card-text">Clique para mais informações.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="card" style="width: 18rem;" onclick="exibirInformacao(this)" data-title="4° semestre" data-info= "<li>Integração e Entrega Contínua</li><li>Laboratório de Desenvolvimento Web</li><li>Programação para Dispositivos Móveis I</li><li>Internet das Coisas e Aplicações</li><li>Experiência do Usuário</li><li>Estatística Aplicada</li><li>Inglês II</li>">
+                        <div class="card-body">
+                             <h5 class="card-title">4° semestre</h5>
+                             <p class="card-text">Clique para mais informações.</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="card" style="width: 18rem;" onclick="exibirInformacao(this)" data-title="5° semestre" data-info= "<li>Segurança no Desenvolvimento de Aplicações</li><li>Laboratório de Desenvolvimento para Dispositivos Móveis</li><li>Programação para Dispositivos Móveis II</li><li>Aprendizado de Máquinas</li><li>Computação em Nuvem I</li><li>Fundamentos da Redação Técnica</li><li>Inglês III</li>">
+                        <div class="card-body">
+                             <h5 class="card-title">5° semestre</h5>
+                             <p class="card-text">Clique para mais informações.</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="card" style="width: 18rem;" onclick="exibirInformacao(this)" data-title="6° semestre" data-info= "<li>Mineração de Dados</li><li>Laboratório de Desenvolvimento Multiplataforma</li><li>Qualidade e Testes de Software</li><li>Processamento de Linguagem Natural</li><li>Computação em Nuvem II</li><li>Ética Profissional e Patente</li><li>Inglês IV</li>">
+                        <div class="card-body">
+                             <h5 class="card-title">6° semestre</h5>
+                             <p class="card-text">Clique para mais informações.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="info">
+            <h1>Mais Informações Sobre o Curso</h1><br>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <img src="img/home.png" alt="Imagem da Home" class="img-fluid">
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <p>O curso em Desenvolvimento de Software Multiplataforma tem como objetivo formar profissionais capazes de desenvolver software para diversas plataformas, tais como Web, Desktop, Móvel, Internet das Coisas (IoT), em Nuvem, empregando conceitos de Segurança da Informação e Inteligência Artificial. Assim como especializar profissionais para trabalhar com metodologias ágeis de gestão de projetos, versionamento, integração e entrega contínua de software, visando desenvolver soluções de software que atendam os critérios de qualidade exigidos pelo mercado. Além disso, pretende-se preparar os egressos para estabelecer relacionamentos produtivos; desenvolver a capacidade de comunicação, inclusive em língua estrangeira; utilizar raciocínio lógico; gerar soluções inovadoras; saber posicionar-se enquanto profissional e cidadão ético, com responsabilidade social e ambiental.</p>
+                </div>
+            </div>
+        </section>
+        <section id="fatec">
+            <h1>A Fatec Indaiatuba</h1><br>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <img src="img/home.png" alt="Imagem da Home" class="img-fluid">
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <p>O curso em Desenvolvimento de Software Multiplataforma tem como objetivo formar profissionais capazes de desenvolver software para diversas plataformas, tais como Web, Desktop, Móvel, Internet das Coisas (IoT), em Nuvem, empregando conceitos de Segurança da Informação e Inteligência Artificial. Assim como especializar profissionais para trabalhar com metodologias ágeis de gestão de projetos, versionamento, integração e entrega contínua de software, visando desenvolver soluções de software que atendam os critérios de qualidade exigidos pelo mercado. Além disso, pretende-se preparar os egressos para estabelecer relacionamentos produtivos; desenvolver a capacidade de comunicação, inclusive em língua estrangeira; utilizar raciocínio lógico; gerar soluções inovadoras; saber posicionar-se enquanto profissional e cidadão ético, com responsabilidade social e ambiental.</p>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 text-md-left text-sm-center">
+                    <a href="https://www.fatecid.com.br/site/" target="_blank">
+                        <img src="img/Logo_Fatec-removebg-preview.png" alt="imagem fatec" style="width: 258px; height: 106px;">
+                    </a> <br>
+                    <ul class="list-unstyled list-inline social text-left">
+                        <li class="list-inline-item" style="margin-left: 40px;">
+                            <a href="https://www.facebook.com/fatecdeindaiatuba" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item"style="margin-left: 20px;">
+                            <a href="https://www.instagram.com/fatecindaiatuba/" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item"style="margin-left: 20px;">
+                            <a href="https://www.youtube.com/channel/UChZP4dkp2IFvLslxm3i_Qdw" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item"style="margin-left: 20px;">
+                            <a href="https://api.whatsapp.com/send?phone=5519992691700" target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center mt-2">
+                    Desenvolvido por: <br>
+                    Elisangela Madaleno <br>
+                    Mikhail Levinski <br>
+                    Patrick Miguel <br>
+                    Reinaldo Gomes <br>
+                    Yuri Mansano <br>
+                </div>
+                <div class="col-md-4 col-sm-12 text-md-right text-sm-center">
+                    <a href="https://www.cps.sp.gov.br/" target="_blank">
+                        <img src="img/Logo_CPS-removebg-preview.png" alt="imagem cps" style="width: 258px; height: 106px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src = "scripts/card.js"></script>
+</body>
+</html>
