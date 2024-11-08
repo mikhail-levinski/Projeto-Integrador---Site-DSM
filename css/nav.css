@@ -1,5 +1,8 @@
 .navbar {
     background: linear-gradient(95deg, rgba(255, 255, 255, 0.50) 8.15%, rgba(135, 206, 250, 0.50) 16.79%, rgba(0, 250, 154, 0.50) 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 18pt;
 }
 .navbar.sticky-top {
     background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade de 90% */
