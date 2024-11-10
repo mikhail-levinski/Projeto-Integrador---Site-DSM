@@ -16,4 +16,15 @@ $(document).ready(function () {
         event.preventDefault(); // Impede o comportamento padrão do link
         $("html, body").animate({scrollTop: 0}, 800);
     });
+
+    // Rolar suavemente para seções específicas quando os links de navegação são clicados
+    $('a.nav-link').click(function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
+        var target = $($.attr(this, 'href'));
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 800); // Define a duração da animação
+        }
+    });
 });
