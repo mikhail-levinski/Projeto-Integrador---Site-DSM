@@ -1,3 +1,8 @@
 .card {
     cursor: pointer;
   }
+  @media (max-width: 768px) { .card 
+    { margin: 10px 0; /* Margem superior e inferior de 10px */
+      margin-right: 10px;
+    }
+  }
