@@ -10,6 +10,8 @@ main p {
     text-align: justify;
     line-height: 1.5;
     margin: 10px;
+    word-break: break-word; /* Quebra palavras longas */ 
+    hyphens: auto;
 }
 main h1{
     text-align: center;
@@ -38,4 +40,9 @@ body {
 .btn {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+}
+@media (max-width: 768px) { main { 
+    word-break: normal; /* Ajuste a quebra de palavras */ 
+    hyphens: none; /* Desative a hifenização em dispositivos móveis */ 
+} 
 }
