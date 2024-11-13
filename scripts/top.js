@@ -18,13 +18,19 @@ $(document).ready(function () {
     });
 
     // Rolar suavemente para seções específicas quando os links de navegação são clicados
-    $('a.nav-link').click(function(event) {
-        event.preventDefault(); // Impede o comportamento padrão do link
-        var target = $($.attr(this, 'href'));
-        if (target.length) {
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 800); // Define a duração da animação
-        }
+    $(document).ready(function() {
+        var navbarHeight = $('.navbar').outerHeight(); // Obtém a altura da navbar
+    
+        $('a.nav-link').click(function(event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+            var target = $($.attr(this, 'href'));
+    
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - navbarHeight // Ajusta a rolagem considerando a altura da navbar
+                }, 800); // Define a duração da animação
+            }
+        });
     });
+    
 });
